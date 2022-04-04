@@ -10,7 +10,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/puneetbhatia77/CI-addressbook-deploy-usingAnsible.git'
+                git branch: 'master', url: 'https://github.com/rushtojp/CI-addressbook-deploy-usingAnsible.git'
              
           }
         }
