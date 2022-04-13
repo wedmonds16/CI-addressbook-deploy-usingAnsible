@@ -52,5 +52,23 @@ pipeline {
             
             }
         }
+    
+    
+      stage('Ansible Deploy Prod') {
+             
+            steps {
+                 
+             
+               
+               sh "ansible-playbook main.yml -i inventories/prod/hosts --user azureuser --key-file ~/.ssh/id_rsa"
+
+               
+            
+            }
+        }
+    
+    
+    
+    
     }
 }
